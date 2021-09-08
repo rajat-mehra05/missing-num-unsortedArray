@@ -11,3 +11,27 @@ let n = arr.length;
 console.log(n);
 let miss = getMissingNo(arr, n);
 console.log(miss);
+
+
+/* find all missing numbers from unsorted unordered array
+
+function findAllMissing(a){
+    let diff=a[0];
+    let n=a.length;
+
+    let temp=[];
+
+    for( let i=0; i<n; i++){
+        if(a[i] -i != diff){
+            while(diff < a[i]-i){
+                temp.push(i+diff);
+                diff++
+            }
+        }
+    }
+    console.log(temp)
+}
+
+findAllMissing([6,7,9,11]);
+
+*/
